@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>想对你说</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+  .letter-container {
+    padding: 50px 24px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .letter-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+
+  .letter-content {
+    font-size: 16px;
+    line-height: 2;
+    color: rgba(255,255,255,0.85);
+    font-weight: 300;
+  }
+
+  .letter-content p {
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .letter-content p:nth-child(1) { animation-delay: 0.3s; }
+  .letter-content p:nth-child(2) { animation-delay: 0.8s; }
+  .letter-content p:nth-child(3) { animation-delay: 1.3s; }
+  .letter-content p:nth-child(4) { animation-delay: 1.8s; }
+  .letter-content p:nth-child(5) { animation-delay: 2.3s; }
+
+  .signature {
+    text-align: right;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #c9a96e;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 2.8s forwards;
+  }
+
+  .back-btn {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  /* 返回首页按钮样式 */
+.back-home-btn {
+  position: fixed;
+  top: 40px;      /* 适配手机端顶部留白，可根据需要调整 */
+  left: 20px;
+  color: #D4AF37; /* 经典暖金色，匹配你之前的“我们”图与文案氛围 */
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 999;
+  font-family: serif; /* 衬线体更显文艺 */
+  transition: opacity 0.3s;
+}
+
+.back-home-btn:hover {
+  opacity: 0.7;
+}
+
+/* 移动端适配（她大概率用手机看） */
+@media (max-width: 768px) {
+  .back-home-btn {
+    top: 25px;
+    left: 15px;
+    font-size: 24px;
+  }
+}
+</style>
+</head>
+<body>
+  <a href="index.html" class="back-home-btn">&lt; 首页</a>
+<div class="letter-container">
+  <div class="letter-title">💌 给宝贝媳妇儿的一封信</div>
+  
+  <div class="letter-content">
+    <p>宝贝，三周年快乐。</p>
+    <p>不知不觉，我们已经携手走过整整三年了。三百多个日夜，说长不长，却装满了我人生里最温柔、最踏实的所有回忆。从最开始的心动、试探，到现在的默契、依赖，你一点点填满了我的生活，也治愈了我所有不安和浮躁。</p>
+    <p>和你在一起之后我才明白，真正的喜欢不是一时的新鲜感，而是日复一日的偏爱、包容、舍不得和放不下。这三年里，我们有开心、有感动，也有争吵、误会和难熬的时刻。但无论怎么样，我们从来没有真正放开过彼此。哪怕是异地、哪怕是压力、哪怕是情绪崩溃，最后留在我身边的人，永远是你。谢谢你，一直坚定选择我、相信我、陪着我。</p>
+    <p>我不算完美的人，脾气偶尔慢、情绪偶尔差、很多地方不够成熟。但你一直耐心包容我、温柔接住我、陪着我慢慢变好。遇见你之后，我开始想努力、想稳定、想攒钱、想未来、想有一个真正属于我们的家。是你让我有了奋斗的意义，也让我第一次对未来充满期待。</p>
+    <p>别人谈恋爱是轰轰烈烈，我们是细水长流。我最喜欢的，就是和你平平淡淡的相处。不用伪装、不用小心翼翼、舒服、踏实、安心，这是任何人都给不了我的感觉。</p>
+    <p>三年只是我们的开始。我想陪你过第四年、第五年、第十年、很多很多年。想陪你春夏秋冬，想陪你从青涩走到安稳，想把所有温柔和余生的偏爱，全部都留给你。未来的日子，我会更成熟、更稳重、更懂珍惜。好好爱你、好好照顾你、不让你受委屈、不让你失望。</p>
+    <p>三周年快乐，我的女孩。始于心动，忠于陪伴，终于余生。我爱你，不止这三年，是一辈子。</p>
+    <p>（三年，1095天。从教室窗口到外面更大的世界，你一直在我旁边。谢谢你在我不确定的时候给我确定的答案，在我丧的时候陪我耗着，在我开心的时候比我更开心。我知道我不够完美，但我想用接下来的每一个三年，慢慢变成你值得的那个人。第四个秋天快到了。还想和你一起看。）</p>
+  </div>
+  
+  <div class="signature">
+    永远爱你的 小义义<br/>
+    2026.10.13
+  </div>
+  
+  <a href="index.html" class="back-btn">回到首页</a>
+</div>
+</body>
+</html>
